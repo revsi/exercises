@@ -1,0 +1,68 @@
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/dvb_subtitle_decoder.c: In function ‘write_dvb_sub’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/dvb_subtitle_decoder.c:1440:6: warning: unused variable ‘ret’ [-Wunused-variable]
+  int ret = 0;
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c: In function ‘process_page’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:506:44: warning: pointer targets in passing argument 1 of ‘page_buffer_add_string’ differ in signedness [-Wpointer-sign]
+                     page_buffer_add_string(encoded_crlf);
+                                            ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:238:6: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+ void page_buffer_add_string (const char *s)
+      ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:659:37: warning: pointer targets in passing argument 1 of ‘page_buffer_add_string’ differ in signedness [-Wpointer-sign]
+             page_buffer_add_string (encoded_crlf);
+                                     ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:238:6: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+ void page_buffer_add_string (const char *s)
+      ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:660:37: warning: pointer targets in passing argument 1 of ‘page_buffer_add_string’ differ in signedness [-Wpointer-sign]
+             page_buffer_add_string (encoded_crlf);
+                                     ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/telxcc.c:238:6: note: expected ‘const char *’ but argument is of type ‘unsigned char *’
+ void page_buffer_add_string (const char *s)
+      ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_sami.c: In function ‘write_cc_bitmap_as_sami’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_sami.c:85:18: warning: variable ‘ms_end’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+                  ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_sami.c:85:8: warning: variable ‘ms_start’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+        ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_sami.c:84:20: warning: variable ‘rect’ set but not used [-Wunused-but-set-variable]
+  struct cc_bitmap* rect;
+                    ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/ccx_encoders_common.c: In function ‘write_cc_bitmap_as_transcript’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/ccx_encoders_common.c:242:20: warning: variable ‘end_time’ set but not used [-Wunused-but-set-variable]
+  LLONG start_time, end_time;
+                    ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/ccx_encoders_common.c:242:8: warning: variable ‘start_time’ set but not used [-Wunused-but-set-variable]
+  LLONG start_time, end_time;
+        ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/ccx_encoders_common.c:236:20: warning: variable ‘rect’ set but not used [-Wunused-but-set-variable]
+  struct cc_bitmap* rect;
+                    ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_smptett.c: In function ‘write_cc_bitmap_as_smptett’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_smptett.c:113:6: warning: unused variable ‘len’ [-Wunused-variable]
+  int len = 0;
+      ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_smptett.c:111:18: warning: variable ‘ms_end’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+                  ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_smptett.c:111:8: warning: variable ‘ms_start’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+        ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_smptett.c:110:20: warning: variable ‘rect’ set but not used [-Wunused-but-set-variable]
+  struct cc_bitmap* rect;
+                    ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/networking.c:19:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+ #pragma warning( suppress : 4005)
+ ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_srt.c: In function ‘write_cc_bitmap_as_srt’:
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_srt.c:77:18: warning: variable ‘ms_end’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+                  ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_srt.c:77:8: warning: variable ‘ms_start’ set but not used [-Wunused-but-set-variable]
+  LLONG ms_start, ms_end;
+        ^
+/home/rajat/work/ccextractor.0.75/src/lib_ccx/608_srt.c:76:20: warning: variable ‘rect’ set but not used [-Wunused-but-set-variable]
+  struct cc_bitmap* rect;
+                    ^
