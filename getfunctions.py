@@ -2,7 +2,7 @@
 
 import sys, getopt, os, re
 
-not_required = ['if', 'else', 'while']
+not_required = ['if', 'else', 'while', 'for', '+', 'switch']
 
 def main(argv):
     inputfile = ''
@@ -21,18 +21,19 @@ def main(argv):
             usage()
     # abs_in is the absolute path of input file
     abs_in = os.path.realpath(os.path.join(inputfile))
-    print abs_in
+    #print abs_in
     parser(abs_in)
 
 def parser(inp):
     openfile = open(inp,'r')
     methods=[] 
     for line in openfile:
-        if '(' in line:
+        if '(' in line and '//' not in line:
             tokens=line.split('(')
             token=tokens[0].split()
             if(len(token)>0):
-                methods.append(token[-1])
+                if(('=' not in token[-1]) and ('/' not in token[-1] and '}' not in token[-1])):
+                    methods.append(token[-1])
     methods=list(set(methods)-set(not_required)) #O(N)
     for x in methods:
         print x
